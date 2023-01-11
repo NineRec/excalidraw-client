@@ -1,0 +1,63 @@
+{
+  "build": {
+    "beforeBuildCommand": "cd excalidraw && yarn build:app:docker",
+    "beforeDevCommand": "cd excalidraw && yarn start",
+    "devPath": "http://localhost:3000",
+    "distDir": "../excalidraw/build"
+  },
+  "package": {
+    "productName": "excalidraw-client",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "NineRec @ blog.codepanic.cn",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/logo-180x180.png",
+        "icons/excalidraw.icns",
+        "icons/excalidraw.ico"
+      ],
+      "identifier": "com.codepanic.excalidraw",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 780,
+        "resizable": true,
+        "title": "Excalidraw",
+        "width": 1200
+      }
+    ]
+  }
+}
