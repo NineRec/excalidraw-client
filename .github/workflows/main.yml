@@ -33,6 +33,7 @@ jobs:
 
       - name: Sync node version and setup cache
         uses: actions/setup-node@v3
+        working-directory: excalidraw
         with:
           node-version: 'lts/*'
           cache: 'yarn' # Set this to npm, yarn or pnpm.
