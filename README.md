@@ -18,6 +18,10 @@ fonttools merge Virgil.ttf XiaolaiSC-Regular.ttf
 * run `wails dev` in the project directory while developing(a dev server that runs on http://localhost:34115);
 * to build a redistributable, production mode package, use `wails build`.
 
+## TODO
+
+- [ ] support import/export;
+
 ## Reference
 
 * [Why Golang instead of Rust to develop the Krater desktop app](https://blog.moonguard.dev/why-golang-instead-of-rust-to-develop-the-krater-desktop-app)
